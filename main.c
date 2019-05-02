@@ -7,7 +7,7 @@
 int main()
 {
     crearDat();
-    leerTxt();
+    resolverParcial();
     leerDat();
     return 0;
 }
