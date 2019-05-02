@@ -32,7 +32,7 @@ FILE* OpenDat(const char *mode){
 }
 
 
-void leerTxt()
+void resolverParcial()
 {
     FILE *pArchivo = OpenTxt("r+");
     ST_archivoTxt arcTxt;
@@ -109,6 +109,17 @@ void calcula(int hora, float newMedicion)
     fclose(pArchivoDat);
 }
 
+void crearDat()
+{
+    FILE *pArchivoDat = OpenDat("wb");
+
+    for(int i = 0; i < cant_horas; i++)
+    {
+        fwrite(crearMedicion(i,99,0,0,0), sizeof(ST_medicion), 1, pArchivoDat);
+    }
+    fclose(pArchivoDat);
+}
+
 void leerDat()
 {
     FILE *pArchivoDat = OpenDat("r+b");
@@ -126,13 +137,3 @@ void leerDat()
     fclose(pArchivoDat);
 }
 
-void crearDat()
-{
-    FILE *pArchivoDat = OpenDat("wb");
-
-    for(int i = 0; i < cant_horas; i++)
-    {
-        fwrite(crearMedicion(i,99,0,0,0), sizeof(ST_medicion), 1, pArchivoDat);
-    }
-    fclose(pArchivoDat);
-}
