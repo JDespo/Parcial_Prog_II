@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1556822682 source:c:\users\administrador\desktop\utn 2019\programacion 2\parcial-progii\main.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556822596 source:c:\users\administrador\desktop\utn 2019\programacion 2\parcial-progii\funciones.c
+	<stdio.h>
+	<stdlib.h>
+	<string.h>
+	"funciones.h"
+
+1556822212 c:\users\administrador\desktop\utn 2019\programacion 2\parcial-progii\funciones.h
+
