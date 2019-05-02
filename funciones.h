@@ -23,7 +23,7 @@ typedef struct
 } ST_medicion;
 
 void crearDat();
-void leerTxt();
+void resolverParcial();
 void parcearLinea(char linea[50], ST_archivoTxt *datos);
 float strAFloat(ST_archivoTxt arcTxt);
 void calcula(int hora, float newMedicion);
